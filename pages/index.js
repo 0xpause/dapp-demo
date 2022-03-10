@@ -1,4 +1,3 @@
-import App from "./app"
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -23,6 +22,16 @@ export default function Home() {
           <li>
             <Link href="/posts/1-hello-world">
               <a>Hello World</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/posts/2-crud">
+              <a>Crud</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/posts/trader">
+              <a>Trader</a>
             </Link>
           </li>
         </ol>

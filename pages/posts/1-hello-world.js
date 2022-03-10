@@ -15,6 +15,7 @@ function App() {
     const [netId, setNetId] = useState(); 
     const [contract, setContract] = useState();
     const [greetWord, setGreetWord] = useState();
+    const [contractAddress, setContractAddress] = useState();
 
     useEffect(() => {
         async function load() {
@@ -42,20 +43,15 @@ function App() {
         });
     }, []);
 
+
     return (<div>
       网络ID: {netId}
       <br/>
       当前账号： {account}
       <hr/>
-      <form>
-        <input type="text"/>
-      </form>
       合约地址: { HelloWorld_ADDR }
       <br/>
       初次见面: { greetWord }
-      <ul>
-        <li onClick={() => {window.alert()}}>HelloWorld</li>
-      </ul>
     </div>);
 }
 
