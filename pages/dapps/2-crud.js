@@ -1,13 +1,10 @@
 import Link from "next/link"
 
-// import './App.css';
-// import {Message, Button} from "semantic-ui-react"
 import { useEffect, useState } from "react";
 import Web3 from "web3";
-// import { unlockAccount } from "./api/web3_utils";
 import ABI from "../../abi/contracts/Crud.json";
 
-const Contract_Addr = "0xa449314F94C289Ef00953553084A7753e692bEb6";
+const contractAddress = "0x02B8795adCd58c03Fb6fcD2D08B5452710AA5D51";
 
 function App() {
     const [account, setAccount] = useState(); // 设置账号的状态变量
@@ -31,7 +28,7 @@ function App() {
             const netId = await web3.eth.net.getId();
             const contract = new web3.eth.Contract(
               ABI.abi,
-              Contract_Addr
+              contractAddress
             )
 
             setAccount(accounts[0]);
@@ -129,7 +126,7 @@ function App() {
       <br/>
       当前账号： {account}
       <br/>
-      合约地址: { Contract_Addr }
+      合约地址: { contractAddress }
       <hr/>
       Total users: { totalUsers }
       <hr/>

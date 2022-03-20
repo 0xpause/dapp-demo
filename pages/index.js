@@ -13,32 +13,24 @@ export default function Home() {
         <h1 className='title'>
           Learn Crypto
         </h1>
-        <ol className='catalog' start='0'>
+        <ol className='catalog'>
           <li>
-            <Link href='/posts/0-introduction'>
-              <a>Introduction</a>
+            <Link href="/dapps/1-connect-wallet">
+              <a>Connect Wallet</a>
             </Link>
           </li>
           <li>
-            <Link href="/posts/1-hello-world">
-              <a>Hello World</a>
+            <Link href="/dapps/2-crud">
+              <a>CRUD</a>
             </Link>
           </li>
           <li>
-            <Link href="/posts/2-crud">
-              <a>Crud</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/posts/trader">
+            <Link href="/dapps/trader">
               <a>Trader</a>
             </Link>
           </li>
         </ol>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
       </main>
 
 

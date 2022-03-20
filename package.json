@@ -6,10 +6,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.0",
+    "@chakra-ui/react": "^1.0.0",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@usedapp/core": "^0.12.1",
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "chalk": "^5.0.0",
     "crypto-browserify": "^3.12.0",
+    "ethers": "^5.6.1",
+    "framer-motion": "^6.2.8",
     "https-browserify": "^1.0.0",
     "next": "latest",
     "os-browserify": "^0.3.0",
@@ -19,6 +26,7 @@
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
     "url": "^0.11.0",
-    "web3": "^1.7.0"
+    "web3": "^1.7.0",
+    "web3modal": "^1.9.5"
   }
 }
