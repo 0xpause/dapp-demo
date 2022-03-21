@@ -1,7 +1,10 @@
 import Link from "next/link"
 
 import { useEffect, useState } from "react";
-import { Center, Flex, Text, Box, Heading, Divider, Button} from '@chakra-ui/react';
+import { 
+    Center, Flex, Text, Box, Heading, Divider, 
+    Button, VStack
+} from '@chakra-ui/react';
 
 import Web3 from "web3";
 
@@ -34,50 +37,50 @@ function App() {
     } 
 
     return (
-        <>
-        <Button onClick={e => handleConnect(e) }> Connect </Button>
-        <Text
-            fontWeight="semibold"
-            mb="1rem"
-            textAlign="left"
-            fontSize={["1xl", "1xl", "2xl", "2xl"]}
-        >
-            网络ID: {netId}
-            <br/>
-            当前账号： {account}
-        </Text>
-        </>
+        <Box>
+            <Button onClick={e => handleConnect(e) }> Connect </Button>
+            <Text
+                fontWeight="semibold"
+                mb="1rem"
+                textAlign="left"
+                fontSize={["1xl", "1xl", "2xl", "2xl"]}
+            >
+                网络ID: {netId}
+                <br/>
+                当前账号： {account}
+            </Text>
+        </Box>
     );
 }
 
 
 export default function HelloWorld() {
     return (
-        <>
-        <Heading
-            fontWeight="semibold"
-            mb="1rem"
-            textAlign="left"
-            fontSize={["4xl", "4xl", "5xl", "5xl"]}
-        >
-            Connect to Metamask
-        </Heading>
-        <Divider orientation='vertical' />
-        <App /> 
-        <Divider orientation='vertical' />
-        
-        <Text
-            color="pink.800"
-            fontWeight="semibold"
-            mb="1rem"
-            textAlign="left"
-            textDecoration="underline"
-            fontSize={["2xl", "2xl", "3xl", "3xl"]}
-        >
-            <Link href="/">
-                <a>Back to Home</a>
-            </Link>
-        </Text>    
-        </> 
+        <Box>
+            <VStack spacing={12}>
+                <Heading
+                    fontWeight="semibold"
+                    mb="1rem"
+                    textAlign="left"
+                    fontSize={["4xl", "4xl", "5xl", "5xl"]}
+                >
+                    Connect to Metamask
+                </Heading>
+
+            <App />             
+            <Text
+                color="pink.800"
+                fontWeight="semibold"
+                mb="1rem"
+                textAlign="left"
+                textDecoration="underline"
+                fontSize={["2xl", "2xl", "3xl", "3xl"]}
+            >
+                <Link href="/">
+                    <a>Back to Home</a>
+                </Link>
+            </Text>   
+            </VStack> 
+        </Box>
     )
   }

@@ -11,7 +11,7 @@ function App() {
     const [web3, setWeb3] = useState();
     const [netId, setNetId] = useState(); 
     const [contract, setContract] = useState();
-    const [contractAddress, setContractAddress] = useState();
+    // const [contractAddress, setContractAddress] = useState();
     
     const [totalUsers, setTotalUsers] = useState();
     const [createResult, setCreateResult] = useState();
