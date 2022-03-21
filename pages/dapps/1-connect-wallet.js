@@ -74,7 +74,7 @@ export default function HelloWorld() {
                 mb="1rem"
                 textAlign="left"
                 textDecoration="underline"
-                fontSize={["2xl", "2xl", "3xl", "3xl"]}
+                fontSize={["1xl", "1xl", "2xl", "2xl"]}
             >
                 <Link href="/">
                     <a>Back to Home</a>

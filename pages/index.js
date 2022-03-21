@@ -22,9 +22,8 @@ export default function Home() {
         <title>Learn dapp by examples</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Center>
-        <VStack>
+        <VStack spacing={12}>
           <Heading>
             Learn dapp by examples
           </Heading>
